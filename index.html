@@ -7,8 +7,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- particles -->
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2/tsparticles.interaction.particles.links.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2/tsparticles.move.base.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2/tsparticles.shape.circle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2/tsparticles.updater.color.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2/tsparticles.updater.opacity.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-out-modes@2/tsparticles.updater.out-modes.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2/tsparticles.updater.size.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.min.js"></script>
+        
+
 	</head>
 	<body class="is-preload">
+
+		<script type="text/javascript">
+            (async () => {
+                await loadLinksPreset(tsParticles);
+
+                await tsParticles.load("tsparticles", {
+                    
+                    particles: {
+                        number: {
+                            value: 60,
+                        },
+                        shape: {
+                            type: "square",
+                        },
+                        size: {
+                            value: 2,
+                        },
+                    },
+                    preset: "links",
+                    background: {
+                        color: "transparent",
+                    },
+                });
+            })();
+        </script>
+
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -29,8 +68,8 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>Adelin Gabriel Mares</h1>
-									<p>Computer Science Graduate</p>
+									<h1>Adelin-Gabriel Mares</h1>
+									<p>Junior Software Developer</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
@@ -164,7 +203,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; 2022 Adelin</li><li><a href="#contact">About</a></li>
+							<li>&copy; 2023 Adelin</li><li><a href="#contact">About</a></li>
 						</ul>
 					</div>
 
